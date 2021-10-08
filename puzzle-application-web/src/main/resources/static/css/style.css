@@ -13,8 +13,9 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding: 3rem;
 }
 
 // END GLOBAL SETTINGS //
@@ -22,4 +23,64 @@ body {
 
 // OPENING PAGE //
 
+.semmi {
+}
+
+.opening-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: #cff3e0;
+}
+
+.start-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 5rem;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+
+    background-color: #323d49;
+    color: #f90a44;
+}
+
+.start-btn:hover {
+    font-size: 7rem;
+    padding: 2.5rem 5.5rem;
+}
+
+@keyframes welcomeAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.welcome {
+    padding-top: 15rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #323d49;
+    text-transform: uppercase;
+    animation-name: welcomeAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
 // END OPENING PAGE //
+
