@@ -1,0 +1,10 @@
+.opening-screen {
+    margin: 3rem;
+    background-color: red;
+}
+
+.opening-screen--wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
